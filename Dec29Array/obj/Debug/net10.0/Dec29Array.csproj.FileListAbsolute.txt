@@ -1,0 +1,15 @@
+C:\Users\harsh\Desktop\oops\Dec29Array\bin\Debug\net10.0\Dec29Array.exe
+C:\Users\harsh\Desktop\oops\Dec29Array\bin\Debug\net10.0\Dec29Array.deps.json
+C:\Users\harsh\Desktop\oops\Dec29Array\bin\Debug\net10.0\Dec29Array.runtimeconfig.json
+C:\Users\harsh\Desktop\oops\Dec29Array\bin\Debug\net10.0\Dec29Array.dll
+C:\Users\harsh\Desktop\oops\Dec29Array\bin\Debug\net10.0\Dec29Array.pdb
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.AssemblyInfoInputs.cache
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.AssemblyInfo.cs
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.csproj.CoreCompileInputs.cache
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.sourcelink.json
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.dll
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\refint\Dec29Array.dll
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.pdb
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\Dec29Array.genruntimeconfig.cache
+C:\Users\harsh\Desktop\oops\Dec29Array\obj\Debug\net10.0\ref\Dec29Array.dll
