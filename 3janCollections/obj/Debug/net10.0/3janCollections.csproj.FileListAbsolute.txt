@@ -1,0 +1,15 @@
+C:\Users\harsh\Desktop\oops\3janCollections\bin\Debug\net10.0\3janCollections.exe
+C:\Users\harsh\Desktop\oops\3janCollections\bin\Debug\net10.0\3janCollections.deps.json
+C:\Users\harsh\Desktop\oops\3janCollections\bin\Debug\net10.0\3janCollections.runtimeconfig.json
+C:\Users\harsh\Desktop\oops\3janCollections\bin\Debug\net10.0\3janCollections.dll
+C:\Users\harsh\Desktop\oops\3janCollections\bin\Debug\net10.0\3janCollections.pdb
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.AssemblyInfoInputs.cache
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.AssemblyInfo.cs
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.csproj.CoreCompileInputs.cache
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.sourcelink.json
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.dll
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\refint\3janCollections.dll
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.pdb
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\3janCollections.genruntimeconfig.cache
+C:\Users\harsh\Desktop\oops\3janCollections\obj\Debug\net10.0\ref\3janCollections.dll

@@ -12,3 +12,4 @@ C:\Users\harsh\Desktop\oops\ObjectOrientedApp\obj\Debug\net10.0\refint\ObjectOri
 C:\Users\harsh\Desktop\oops\ObjectOrientedApp\obj\Debug\net10.0\ObjectOrientedApp.pdb
 C:\Users\harsh\Desktop\oops\ObjectOrientedApp\obj\Debug\net10.0\ObjectOrientedApp.genruntimeconfig.cache
 C:\Users\harsh\Desktop\oops\ObjectOrientedApp\obj\Debug\net10.0\ref\ObjectOrientedApp.dll
+C:\Users\harsh\Desktop\oops\ObjectOrientedApp\obj\Debug\net10.0\ObjectOrientedApp.sourcelink.json

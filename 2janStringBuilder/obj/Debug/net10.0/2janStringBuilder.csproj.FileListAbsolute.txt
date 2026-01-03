@@ -1,0 +1,15 @@
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.AssemblyInfoInputs.cache
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.AssemblyInfo.cs
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.csproj.CoreCompileInputs.cache
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.sourcelink.json
+C:\Users\harsh\Desktop\oops\2janStringBuilder\bin\Debug\net10.0\2janStringBuilder.exe
+C:\Users\harsh\Desktop\oops\2janStringBuilder\bin\Debug\net10.0\2janStringBuilder.deps.json
+C:\Users\harsh\Desktop\oops\2janStringBuilder\bin\Debug\net10.0\2janStringBuilder.runtimeconfig.json
+C:\Users\harsh\Desktop\oops\2janStringBuilder\bin\Debug\net10.0\2janStringBuilder.dll
+C:\Users\harsh\Desktop\oops\2janStringBuilder\bin\Debug\net10.0\2janStringBuilder.pdb
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.dll
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\refint\2janStringBuilder.dll
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.pdb
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\2janStringBuilder.genruntimeconfig.cache
+C:\Users\harsh\Desktop\oops\2janStringBuilder\obj\Debug\net10.0\ref\2janStringBuilder.dll
