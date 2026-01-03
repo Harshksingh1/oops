@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections;
+using System.Text.Json.Serialization.Metadata;
+using Microsoft.VisualBasic;
 internal class Program
 {
     private static void Main(string[] args)
@@ -138,63 +140,69 @@ internal class Program
     // Console.WriteLine(sumstring);
 
         
-        List<Employee> employees = new List<Employee>();
-        employees.Add(new Employee { Id = 1, Name = "Gaurav" });
-        employees.Add(new Employee { Id = 2, Name = "Kundan" });
-        employees.Add(new Employee { Id = 3, Name = "Krishna" });
-        foreach (Employee emp in employees)
-        {
-            Console.WriteLine(emp);
-        }
+        // List<Employee> employees = new List<Employee>();
+        // employees.Add(new Employee { Id = 1, Name = "Gaurav" });
+        // employees.Add(new Employee { Id = 2, Name = "Kundan" });
+        // employees.Add(new Employee { Id = 3, Name = "Krishna" });
+        // foreach (Employee emp in employees)
+        // {
+        //     Console.WriteLine(emp);
+        // }
 
 
-        Dictionary<int, string> dict = new Dictionary<int, string>();
-        dict.Add(101, "Gaurav");
-        dict.Add(102, "Kundan");
-        dict.Add(103, "Krishna");
-        foreach(var kvp in dict)
-        {
-            Console.WriteLine("Key: " + kvp.Key + ", Value: " + kvp.Value);
-        }
+        // Dictionary<int, string> dict = new Dictionary<int, string>();
+        // dict.Add(101, "Gaurav");
+        // dict.Add(102, "Kundan");
+        // dict.Add(103, "Krishna");
+        // foreach(var kvp in dict)
+        // {
+        //     Console.WriteLine("Key: " + kvp.Key + ", Value: " + kvp.Value);
+        // }
 
 
-        SortedList<string, string> sortedList = new SortedList<string, string>();
-        sortedList.Add("101", "Gaurav");
-        sortedList.Add("102", "Kundan");
-        sortedList.Add("103", "Krishna");
-        foreach(var kvp in sortedList)
-        {
-            Console.WriteLine("Key: " + kvp.Key + ", Value: " + kvp.Value);
-        }
+        // SortedList<string, string> sortedList = new SortedList<string, string>();
+        // sortedList.Add("101", "Gaurav");
+        // sortedList.Add("102", "Kundan");
+        // sortedList.Add("103", "Krishna");
+        // foreach(var kvp in sortedList)
+        // {
+        //     Console.WriteLine("Key: " + kvp.Key + ", Value: " + kvp.Value);
+        // }
 
-        Stack<char> stack = new Stack<char>();
-        stack.Push('A');
-        stack.Push('B');
-        stack.Push('C');
-        foreach(var item in stack)
-        {
-            Console.WriteLine("Stack item: " + item);
-        }
-        stack.Pop();
-        Console.WriteLine("After Pop:");
-        foreach(var item in stack)
-        {
-            Console.WriteLine("Stack item: " + item);
-        }
+        // Stack<char> stack = new Stack<char>();
+        // stack.Push('A');
+        // stack.Push('B');
+        // stack.Push('C');
+        // foreach(var item in stack)
+        // {
+        //     Console.WriteLine("Stack item: " + item);
+        // }
+        // stack.Pop();
+        // Console.WriteLine("After Pop:");
+        // foreach(var item in stack)
+        // {
+        //     Console.WriteLine("Stack item: " + item);
+        // }
 
-        Queue<char> queue = new Queue<char>();
-        queue.Enqueue('X');
-        queue.Enqueue('Y');
-        queue.Enqueue('Z');
-        foreach(var item in queue)
+        // Queue<char> queue = new Queue<char>();
+        // queue.Enqueue('X');
+        // queue.Enqueue('Y');
+        // queue.Enqueue('Z');
+        // foreach(var item in queue)
+        // {
+        //     Console.WriteLine("Queue item: " + item);
+        // }
+        // queue.Dequeue();
+        // Console.WriteLine("After Dequeue:");
+        // foreach(var item in queue)
+        // {
+        //     Console.WriteLine("Queue item: " + item);
+        // }
+       
+       MyCollection obj=new MyCollection();
+       foreach(int i in obj)
         {
-            Console.WriteLine("Queue item: " + item);
-        }
-        queue.Dequeue();
-        Console.WriteLine("After Dequeue:");
-        foreach(var item in queue)
-        {
-            Console.WriteLine("Queue item: " + item);
+            Console.WriteLine(i);
         }
 
     }

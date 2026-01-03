@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3janCollections")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab1d071239196e4851a92f99bc84f8033758b337")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e192a417f61a6211addb803332aeebaa2abebe4")]
 [assembly: System.Reflection.AssemblyProductAttribute("3janCollections")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3janCollections")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
