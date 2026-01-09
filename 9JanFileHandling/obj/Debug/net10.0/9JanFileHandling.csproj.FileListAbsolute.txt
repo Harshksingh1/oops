@@ -1,0 +1,15 @@
+C:\Users\harsh\Desktop\oops\9JanFileHandling\bin\Debug\net10.0\9JanFileHandling.exe
+C:\Users\harsh\Desktop\oops\9JanFileHandling\bin\Debug\net10.0\9JanFileHandling.deps.json
+C:\Users\harsh\Desktop\oops\9JanFileHandling\bin\Debug\net10.0\9JanFileHandling.runtimeconfig.json
+C:\Users\harsh\Desktop\oops\9JanFileHandling\bin\Debug\net10.0\9JanFileHandling.dll
+C:\Users\harsh\Desktop\oops\9JanFileHandling\bin\Debug\net10.0\9JanFileHandling.pdb
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.AssemblyInfoInputs.cache
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.AssemblyInfo.cs
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.csproj.CoreCompileInputs.cache
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.sourcelink.json
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.dll
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\refint\9JanFileHandling.dll
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.pdb
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\9JanFileHandling.genruntimeconfig.cache
+C:\Users\harsh\Desktop\oops\9JanFileHandling\obj\Debug\net10.0\ref\9JanFileHandling.dll
