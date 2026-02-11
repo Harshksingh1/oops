@@ -1,0 +1,15 @@
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.AssemblyInfoInputs.cache
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.AssemblyInfo.cs
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.csproj.CoreCompileInputs.cache
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.sourcelink.json
+C:\Users\harsh\Desktop\DotNet\M1Practice\bin\Debug\net10.0\M1Practice.exe
+C:\Users\harsh\Desktop\DotNet\M1Practice\bin\Debug\net10.0\M1Practice.deps.json
+C:\Users\harsh\Desktop\DotNet\M1Practice\bin\Debug\net10.0\M1Practice.runtimeconfig.json
+C:\Users\harsh\Desktop\DotNet\M1Practice\bin\Debug\net10.0\M1Practice.dll
+C:\Users\harsh\Desktop\DotNet\M1Practice\bin\Debug\net10.0\M1Practice.pdb
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.dll
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\refint\M1Practice.dll
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.pdb
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\M1Practice.genruntimeconfig.cache
+C:\Users\harsh\Desktop\DotNet\M1Practice\obj\Debug\net10.0\ref\M1Practice.dll
