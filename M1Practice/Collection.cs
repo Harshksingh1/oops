@@ -325,9 +325,7 @@
 //     }
 // }
 //=======================================================================================================
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Text.Json.Serialization.Metadata;
+
 
 class Program
 {
@@ -388,11 +386,11 @@ class MobileUtility
     public void AddMobileDetails(string model, string brand, int price)
     {
         int key=Program.mobileDetails.Count+1;
-        Mobile mobile=new Mobile{
-            Model=model,
-            Brand=brand,
-            Price=price
-        };
+        Mobile mobile=new Mobile();
+            mobile.Model=model;
+            mobile.Brand=brand;
+            mobile.Price=price;
+        
         Program.mobileDetails.Add(key,mobile);
     }
     public SortedDictionary<string, List<Mobile>> GroupMobilesByBrand()
