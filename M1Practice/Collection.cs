@@ -327,91 +327,322 @@
 //=======================================================================================================
 
 
-class Program
-{
-    public static SortedDictionary<int,Mobile> mobileDetails=new SortedDictionary<int, Mobile>(); 
-    public static void Main()
-    {
-        while(true){
-        Console.WriteLine("1.Add Mobile Details");
-        Console.WriteLine("2.Group Mobiles By Brand");
-        Console.WriteLine("3.Exit");
-        Console.WriteLine("Enter the choice");
+// class Program
+// {
+//     public static SortedDictionary<int,Mobile> mobileDetails=new SortedDictionary<int, Mobile>(); 
+//     public static void Main()
+//     {
+//         while(true){
+//         Console.WriteLine("1.Add Mobile Details");
+//         Console.WriteLine("2.Group Mobiles By Brand");
+//         Console.WriteLine("3.Exit");
+//         Console.WriteLine("Enter the choice");
 
-        int choice=int.Parse(Console.ReadLine());
-        MobileUtility mobileUtility=new MobileUtility();
-        if (choice == 1)
-        {
-            Console.WriteLine("Enter the mode");
-            string model = Console.ReadLine();
-            Console.WriteLine("Enter the brand");
-            string brand = Console.ReadLine();
-            Console.WriteLine("Enter the price");
-            int price =int.Parse(Console.ReadLine());
+//         int choice=int.Parse(Console.ReadLine());
+//         MobileUtility mobileUtility=new MobileUtility();
+//         if (choice == 1)
+//         {
+//             Console.WriteLine("Enter the mode");
+//             string model = Console.ReadLine();
+//             Console.WriteLine("Enter the brand");
+//             string brand = Console.ReadLine();
+//             Console.WriteLine("Enter the price");
+//             int price =int.Parse(Console.ReadLine());
 
-            
-            mobileUtility.AddMobileDetails(model,brand,price);
-            Console.WriteLine("Mobile details added successfully");
-        }
-        if (choice == 2)
-        {
-           var ans=mobileUtility.GroupMobilesByBrand();
-           foreach(var i in ans)
-            {
-                Console.WriteLine(i.Key);
-                foreach (var m in i.Value)
-                {
-                    Console.WriteLine(m.Model); 
-                }
-            }
-            
-        }
-        if(choice == 3)
-            {
-                Console.WriteLine("Thank you");
-                break;
-            }
-        }
-    }
-}
-class Mobile
-{
-    public string Model{get;set;}
-    public string Brand { get; set; }
-    public int Price { get; set; }
 
-}
-class MobileUtility
-{
-    public void AddMobileDetails(string model, string brand, int price)
-    {
-        int key=Program.mobileDetails.Count+1;
-        Mobile mobile=new Mobile();
-            mobile.Model=model;
-            mobile.Brand=brand;
-            mobile.Price=price;
+//             mobileUtility.AddMobileDetails(model,brand,price);
+//             Console.WriteLine("Mobile details added successfully");
+//         }
+//         if (choice == 2)
+//         {
+//            var ans=mobileUtility.GroupMobilesByBrand();
+//            foreach(var i in ans)
+//             {
+//                 Console.WriteLine(i.Key);
+//                 foreach (var m in i.Value)
+//                 {
+//                     Console.WriteLine(m.Model); 
+//                 }
+//             }
+
+//         }
+//         if(choice == 3)
+//             {
+//                 Console.WriteLine("Thank you");
+//                 break;
+//             }
+//         }
+//     }
+// }
+// class Mobile
+// {
+//     public string Model{get;set;}
+//     public string Brand { get; set; }
+//     public int Price { get; set; }
+
+// }
+// class MobileUtility
+// {
+//     public void AddMobileDetails(string model, string brand, int price)
+//     {
+//         int key=Program.mobileDetails.Count+1;
+//         Mobile mobile=new Mobile();
+//             mobile.Model=model;
+//             mobile.Brand=brand;
+//             mobile.Price=price;
+
+//         Program.mobileDetails.Add(key,mobile);
+//     }
+//     public SortedDictionary<string, List<Mobile>> GroupMobilesByBrand()
+//     {
+//         SortedDictionary<string,List<Mobile>> result=new SortedDictionary<string, List<Mobile>>();
+
+//         foreach(var item in Program.mobileDetails.Values)
+//         {
+//             if (!result.ContainsKey(item.Brand))
+//             {
+//                 List<Mobile> list=new List<Mobile>();
+//                 foreach(var it in Program.mobileDetails.Values)
+//                 {
+//                     if (it.Brand == item.Brand)
+//                     {
+//                         list.Add(it);
+//                     }
+//                 }
+//                 result.Add(item.Brand,list);
+//             }
+//         }
+//         return result;
+//     }
+// }
+
+//==========================================================================
+// using System.Collections.Concurrent;
+
+
+// class Program
+// {
+//     public static Stack<Book> BookStack =new Stack<Book>();
+//     static void Main(){
+//    while(true){
+//    Console.WriteLine(@"Choose the option
+//    1.Add the collec patient details
+//    2.Display the most recently collected book
+//    3.Remove the most recently collected book
+//    4.Exit");
+
+//    int option=int.Parse(Console.ReadLine());
+//    Book book=new Book();
+//         if (option == 1)
+//         {
+//             Console.WriteLine("Enter the book id");
+//             int bookId=int.Parse(Console.ReadLine());
+//             Console.WriteLine("Enter the book name");
+//             string bookName=Console.ReadLine();
+//             Console.WriteLine("Enter the book author");
+//             string bookAuthor=Console.ReadLine();
+//             book.AddBookDetails(bookId,bookName,bookAuthor);
+//             Console.WriteLine("Bookid\tBookName\tAuthor");
+//             foreach(var it in Program.BookStack)
+//             {
+//                 Console.WriteLine($"{it.Id}\t {it.Name} \t{it.Author}");
+//             }
+//         }
+//         if (option == 2)
+//         {
+//             Console.WriteLine(book.GetBookDetails());
+//         }
+//         if (option == 3)
+//         {
+//             book.RemoveBookDetails();
+//             Console.WriteLine("Bookid\tBookName\tAuthor");
+//             foreach(var it in Program.BookStack)
+//             {
+//                 Console.WriteLine($"{it.Id}\t {it.Name} \t{it.Author}");
+//             }
+//         }
+//         if (option == 4)
+//         {
+//             Console.WriteLine("Thank you");
+//             break;
+//         }
+//    }
+//     }
+// }
+// class Book
+// {
+//     public int Id { get; set; }
+//     public string Name { get; set; }
+//     public string Author { get; set; }
+
+//     public Stack<Book> AddBookDetails(int id, string name, string author)
+//     {
+
+//         Program.BookStack.Push(new Book{Id=id,Name=name,Author=author});
+//         return Program.BookStack;
+//     }
+//     public string GetBookDetails()
+//     {
+//         Book recent=Program.BookStack.Peek();
+//         return $"Id:{recent.Id} Name:{recent.Name} Author:{recent.Author}";
+//     }
+//     public Stack<Book> RemoveBookDetails()
+//     {
+//         Program.BookStack.Pop();
+//         return Program.BookStack;
+//     }
+// }
+
+//===============================================================
+// class Program
+// {
+//     public static Queue<Patient> PatientQueue =new Queue<Patient>();
+//     static void Main(){
+//    while(true){
+//    Console.WriteLine(
+//    @"Choose the option
+//    1.Patient Admission
+//    2.Display the first admitted patient details
+//    3.Remove the first admitted patient details
+//    4.Exit");
+
+//    int option=int.Parse(Console.ReadLine());
+//    Patient patient=new Patient();
+//         if (option == 1)
+//         {
+//             Console.WriteLine("Enter  patient id");
+//             int patienId=int.Parse(Console.ReadLine());
+//             Console.WriteLine("Enter  patient name");
+//             string patientName=Console.ReadLine();
+//             Console.WriteLine("Enter  patient address");
+//             string patientAddress=Console.ReadLine(); 
+//             patient.AddPatientDetails(patienId,patientName,patientAddress);
+//             Console.WriteLine("Bookid\tBookName\tAddress");
+//             foreach(var it in Program.PatientQueue)
+//             {
+//                 Console.WriteLine($"{it.Id}\t {it.Name} \t{it.Address}");
+//             }
+//         }
+//         if (option == 2)
+//         {
+//             Console.WriteLine(patient.GetPatientDetails());
+//         }
+//         if (option == 3)
+//         { patient.RemovePatientDetails();
+//             Console.WriteLine("Bookid\tBookName\tAddress");
+//             foreach(var it in Program.PatientQueue)
+//             {
+//                 Console.WriteLine($"{it.Id}\t {it.Name} \t{it.Address}");
+//             }
+//         }
+//         if (option == 4)
+//         {
+//             Console.WriteLine("Thank you");
+//             break;
+//         }
+//    }
+//     }
+// }
+// class Patient
+// {
+//     public int Id { get; set; }
+//     public string Name { get; set; }
+//     public string Address { get; set; }
+
+//     public Queue<Patient> AddPatientDetails(int id, string name, string address)
+//     {
+//         Program.PatientQueue.Enqueue(new Patient{Id=id,Name=name,Address=address});
+//         return Program.PatientQueue;
+//     }
+//     public string GetPatientDetails()
+//     {
+//         Patient recent=Program.PatientQueue.Peek();
+//         return $"Id:{recent.Id} Name:{recent.Name} Address:{recent.Address}";
+//     }
+//     public Queue<Patient> RemovePatientDetails()
+//     {
+//         Program.PatientQueue.Dequeue();
+//         return Program.PatientQueue;
+//     }
+// }
+
+//===============================================================
+// LINQ
+// using System;
+// using System.Text;
+// class Program{
+//     static void Main()
+//     {
+//     StringBuilder str=new StringBuilder("world");
+//        StringBuilder rev=new StringBuilder();
+//        for(int i=str.Length-1;i>=0;i--){
+//            rev.Append(str[i]);
+//        }
+
+//    for(int i = 0; i < rev.Length; i++)
+//         {
+//             if(rev[i]=='a')
+//             rev[i]='e';
+//            else if(rev[i]=='e')
+//             rev[i]='i';
+//            else if(rev[i]=='i')
+//             rev[i]='o';
+//            else if(rev[i]=='o')
+//             rev[i]='u';
+//            else if(rev[i]=='u')
+//             rev[i]='a';
+//         }
+//          StringBuilder rev1=new StringBuilder();
+//          rev1.Append(rev[0]);
+//        for(int i = 1; i < rev.Length; i++)
+//         {
+//             if(rev[i]!=rev[i-1])
+//             rev1.Append(rev[i]);
+//         }
+
+//          int k=3;
+//         k=k%rev1.Length;
+//         StringBuilder result=new StringBuilder();
+//         for(int i = rev1.Length - k; i < rev1.Length; i++)
+//         {
+//             result.Append(rev1[i]);
+//         }
+//         for(int i = 0; i < rev1.Length-k; i++)
+//         {
+//             result.Append(rev1[i]);
+//         }
+//            Console.WriteLine(result);
+//     }
+// }
+//===================================================================================================================================================
+//Delegate, events and lambda expression
+// class Employee
+// {
+//     public int empId;
+//     public string empName;
+//     public string band;
+
+// }
+// class Program
+// {
+//     public static List<Employee> empList=new List<Employee>()
+//     {
+//         new Employee{empId=1,empName="Harsh",band="A1"},
+//         new Employee{empId=2,empName="Shubham",band="B1"},
+//         new Employee{empId=3,empName="Abhi",band="A1"},
+//         new Employee{empId=4,empName="VAnsh",band="A2"},
         
-        Program.mobileDetails.Add(key,mobile);
-    }
-    public SortedDictionary<string, List<Mobile>> GroupMobilesByBrand()
-    {
-        SortedDictionary<string,List<Mobile>> result=new SortedDictionary<string, List<Mobile>>();
-        
-        foreach(var item in Program.mobileDetails.Values)
-        {
-            if (!result.ContainsKey(item.Brand))
-            {
-                List<Mobile> list=new List<Mobile>();
-                foreach(var it in Program.mobileDetails.Values)
-                {
-                    if (it.Brand == item.Brand)
-                    {
-                        list.Add(it);
-                    }
-                }
-                result.Add(item.Brand,list);
-            }
-        }
-        return result;
-    }
-}
+//     };
+//     public static IEnumerable<Employee> nameList;
+//     public static void Main()
+//     {
+//      nameList=empList.Where(x=>x.band=="B1");
+//      foreach(var it in nameList)
+//         {
+//             Console.WriteLine($"{it.empId} {it.empName} {it.band}");
+//         }
+     
+
+//     }
+// }
+
