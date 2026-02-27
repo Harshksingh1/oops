@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events Demo</title>
+</head>
+<body>
+    <h3>click Event (Inline)</h3>
+    <button onclick="console.log('Button Clicked')">Click Me</button>
+
+    <h3>Click Event (External) js</h3>
+    <button id="mybtn">On Click external js</button>
+
+    <h3>Right Click Event</h3>
+    <button oncontextmenu="console.log('Right click detected')"return false;>Right click on me</button>
+
+    <h3>Mouse Event</h3>
+    <button
+    onmouseover="console.log('Mouse over button!')"
+    onmouseout="console.log('Mouse left button')">Hover over me</button>
+
+    <h3>Keyboard Event</h3>
+    <input type="text"
+    placeholder="Type Something"
+    onkeydown="console.log('Key Down Event!')">
+    <br>
+    <textarea
+    placeholder="Type inside textarea"
+    onkeydown="console.log('key pressed in textarea')"></textarea>
+
+    <h3>Form Event</h3>
+    <form id="myform">
+        <input type="text" placeholder="Enter name" required>
+        <button type="submit" id="mybtn">Submit</button>
+    </form>
+   
+    
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click",function(){
+            console.log("Welcome to web Development");
+        })
+
+        document.getElementById("myform").onsubmit=function(event){
+            event.preventDefault();
+            console.log("Form Submitted");
+        }
+    </script>
+</body>
+</html>

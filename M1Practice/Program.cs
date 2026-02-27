@@ -404,7 +404,7 @@
 //     Console.WriteLine("Area of rectangle: "+t.AreaOfRectangle());
 //     }
 // }
-
+///============================================================
 // using System;
 // class Loan
 // {
@@ -1106,7 +1106,7 @@
 // {
 //     public VotingException(string message) : base(message)
 //     {
-        
+
 //     }
 // }
 // class Program
@@ -1134,5 +1134,156 @@
 //         int age=int.Parse(Console.ReadLine());
 //         Program p=new Program();
 //        Console.WriteLine(p.CheckVotersAge(age));
+//     }
+// }
+
+//============================M1Practice===========================
+// class Fish
+// {
+//     public string Species { get; set; }
+//     public double PricePerFish { get; set; }
+// }
+// class FishUtility:Fish
+// {
+//     public void AddFish(string species, double pricePerFish)
+//     {
+//         Species=species;
+//         PricePerFish=pricePerFish;
+//     }
+//     public bool BuyFish()
+//     {
+
+//         if(Species=="Clownfish"||Species=="Goldfish")
+//         return true;
+//         else
+//         return false;
+//     }
+//     public double CalculatePrice(int numberOfFishes)
+//     {
+//         double result=0;
+//         if(Species=="Clownfish")
+//         result=(numberOfFishes*PricePerFish)+100;
+//         if(Species=="Goldfish")
+//         result=(numberOfFishes*PricePerFish)+150;
+
+//         return result;
+//     }
+// }
+// class Program
+// {
+//     static void Main()
+//     {
+//         Console.WriteLine("Enter the species to buy");
+//         string spec=Console.ReadLine();
+//         Console.WriteLine("Enter the price per fish");
+//         double priceperfish=double.Parse(Console.ReadLine());
+
+//         FishUtility fishUtility=new FishUtility();
+//         fishUtility.AddFish(spec,priceperfish);
+//         if (fishUtility.BuyFish())
+//         {
+//              Console.WriteLine("Enter the number of fishes you need to buy");
+//         int number=int.Parse(Console.ReadLine());
+//             Console.WriteLine("Total cost is: "+fishUtility.CalculatePrice(number));
+//         }
+//         if (!fishUtility.BuyFish())
+//         {
+//             Console.WriteLine($"{spec} species not found");
+//         }
+
+//     }
+// }
+
+
+//============================================================
+// using System;
+// using System.Collections.Generic;
+
+// public class BabyDress
+// {
+//     public int Size { get; set; }
+//     public string Color { get; set; }
+//     public string Brand { get; set; }
+//     public double Price { get; set; }
+// }
+
+// public class BabyDressUtility
+// {
+//     public void AddDressToCart(BabyDress dress)
+//     {
+//         Program.DressesCart.Add(dress);
+//     }
+
+//     public bool RemoveDressFromCart(string brand)
+//     {
+//         foreach (BabyDress dress in Program.DressesCart)
+//         {
+//             if (dress.Brand == brand)
+//             {
+//                 Program.DressesCart.Remove(dress);
+//                 return true;
+//             }
+//         }
+//         return false;
+//     }
+// }
+
+// public class Program
+// {
+//     public static List<BabyDress> DressesCart { get; set; } = new List<BabyDress>();
+
+//     public static void Main(string[] args)
+//     {
+//         BabyDressUtility utility = new BabyDressUtility();
+//         bool exit = false;
+
+//         while (!exit)
+//         {
+//             Console.WriteLine("1. Add dress to cart");
+//             Console.WriteLine("2. Remove dress from cart");
+//             Console.WriteLine("3. Exit");
+//             Console.WriteLine("Enter your choice");
+
+//             int choice = int.Parse(Console.ReadLine());
+
+//             switch (choice)
+//             {
+//                 case 1:
+//                     BabyDress dress = new BabyDress();
+
+//                     Console.WriteLine("Enter the dress size");
+//                     dress.Size = int.Parse(Console.ReadLine());
+
+//                     Console.WriteLine("Enter the dress color");
+//                     dress.Color = Console.ReadLine();
+
+//                     Console.WriteLine("Enter the dress brand");
+//                     dress.Brand = Console.ReadLine();
+
+//                     Console.WriteLine("Enter the dress price");
+//                     dress.Price = double.Parse(Console.ReadLine());
+
+//                     utility.AddDressToCart(dress);
+//                     Console.WriteLine("\nSuccessfully added to the dress cart\n");
+//                     break;
+
+//                 case 2:
+//                     Console.WriteLine("Enter the dress brand to remove the dress from cart");
+//                     string brand = Console.ReadLine();
+
+//                     bool removed = utility.RemoveDressFromCart(brand);
+
+//                     if (removed)
+//                         Console.WriteLine("\nSuccessfully removed from the cart\n");
+//                     else
+//                         Console.WriteLine("\nDress not found in the cart\n");
+//                     break;
+
+//                 case 3:
+//                     Console.WriteLine("\nThank you!");
+//                     exit = true;
+//                     break;
+//             }
+//         }
 //     }
 // }

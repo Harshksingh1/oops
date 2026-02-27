@@ -566,54 +566,6 @@
 //     }
 // }
 
-//===============================================================
-// LINQ
-// using System;
-// using System.Text;
-// class Program{
-//     static void Main()
-//     {
-//     StringBuilder str=new StringBuilder("world");
-//        StringBuilder rev=new StringBuilder();
-//        for(int i=str.Length-1;i>=0;i--){
-//            rev.Append(str[i]);
-//        }
-
-//    for(int i = 0; i < rev.Length; i++)
-//         {
-//             if(rev[i]=='a')
-//             rev[i]='e';
-//            else if(rev[i]=='e')
-//             rev[i]='i';
-//            else if(rev[i]=='i')
-//             rev[i]='o';
-//            else if(rev[i]=='o')
-//             rev[i]='u';
-//            else if(rev[i]=='u')
-//             rev[i]='a';
-//         }
-//          StringBuilder rev1=new StringBuilder();
-//          rev1.Append(rev[0]);
-//        for(int i = 1; i < rev.Length; i++)
-//         {
-//             if(rev[i]!=rev[i-1])
-//             rev1.Append(rev[i]);
-//         }
-
-//          int k=3;
-//         k=k%rev1.Length;
-//         StringBuilder result=new StringBuilder();
-//         for(int i = rev1.Length - k; i < rev1.Length; i++)
-//         {
-//             result.Append(rev1[i]);
-//         }
-//         for(int i = 0; i < rev1.Length-k; i++)
-//         {
-//             result.Append(rev1[i]);
-//         }
-//            Console.WriteLine(result);
-//     }
-// }
 //===================================================================================================================================================
 //Delegate, events and lambda expression
 // class Employee
@@ -646,3 +598,4 @@
 //     }
 // }
 
+//==============================================================================
