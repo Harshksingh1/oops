@@ -66,7 +66,7 @@
         // foreach(var item in sorted)
         // {
         //     Console.WriteLine($"{item.Name} {item.Salary}");
-        // }
+        // }   
 
         //==========4️⃣ Sort by Salary Descending, Then Name Ascending===========if salary same then name
         // var result=employees

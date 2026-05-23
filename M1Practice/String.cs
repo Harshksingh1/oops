@@ -1,5 +1,5 @@
 
-//substing
+//substring
 // class Program
 // {
 //     public static void Main()
